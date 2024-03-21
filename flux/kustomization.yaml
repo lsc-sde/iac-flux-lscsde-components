@@ -11,3 +11,4 @@ resources:
   - ohdsi
   - repository.yaml
   - analytics-workspace-management
+  - metrics-server
