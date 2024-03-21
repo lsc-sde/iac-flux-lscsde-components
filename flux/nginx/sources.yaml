@@ -4,6 +4,7 @@ metadata:
   name: nginx
   namespace: lscsde-config
 spec:
+  suspend: ${nginx_ingress_suspended}
   force: false
   interval: 1m0s
   path: ./
