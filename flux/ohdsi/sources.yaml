@@ -4,8 +4,6 @@ metadata:
   name: ohdsi
   namespace: lscsde-config
 spec:
-  dependsOn:
-  - name: keycloak
   force: false
   interval: 1m0s
   path: ./
