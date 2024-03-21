@@ -5,7 +5,7 @@ resources:
   - keda
   - nginx
   - certmanager
-  - keycloak
+#  - keycloak
   - jupyter
   - secrets-distributor
   - ohdsi
