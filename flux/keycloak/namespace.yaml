@@ -3,4 +3,8 @@ kind: Namespace
 metadata:
   labels:
     kubernetes.io/metadata.name: keycloak
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    meta.helm.sh/release-name: lscsde-config-flux
+    meta.helm.sh/release-namespace: lscsde-config
   name: keycloak

@@ -3,6 +3,11 @@ kind: HelmRelease
 metadata:
   name: metrics-server
   namespace: metrics-server
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    meta.helm.sh/release-name: lscsde-config-flux
+    meta.helm.sh/release-namespace: lscsde-config
 spec:
   targetNamespace: metrics-server
   releaseName: metrics-server

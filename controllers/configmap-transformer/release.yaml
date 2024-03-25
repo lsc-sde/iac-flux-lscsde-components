@@ -2,7 +2,11 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: configmap-transformer-controller
+  labels:
+    app.kubernetes.io/managed-by: Helm
   annotations:
+    meta.helm.sh/release-name: lscsde-config-flux
+    meta.helm.sh/release-namespace: lscsde-config
     lsc-sde.nhs.uk/definitionVersion: "1.0.1"
 spec:
   targetNamespace: lscsde

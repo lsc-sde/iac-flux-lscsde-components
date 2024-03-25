@@ -3,6 +3,11 @@ kind: GitRepository
 metadata:
   name: ohdsi
   namespace: lscsde-config
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    meta.helm.sh/release-name: lscsde-config-flux
+    meta.helm.sh/release-namespace: lscsde-config
 spec:
   interval: 1m0s
   ref:

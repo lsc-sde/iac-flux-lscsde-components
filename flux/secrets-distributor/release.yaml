@@ -3,7 +3,11 @@ kind: HelmRelease
 metadata:
   name: secrets-distributor
   namespace: lscsde-config
+  labels:
+    app.kubernetes.io/managed-by: Helm
   annotations:
+    meta.helm.sh/release-name: lscsde-config-flux
+    meta.helm.sh/release-namespace: lscsde-config
     lsc-sde.nhs.uk/definitionVersion: "1.0.1"
 spec:
   targetNamespace: secrets-distributor

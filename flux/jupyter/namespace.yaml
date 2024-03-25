@@ -5,4 +5,8 @@ metadata:
     kubernetes.io/metadata.name: jupyterhub
     lsc-sde.io/injectKeycloakCertificates: "true"
     lsc-sde.io/injectJupyterCertificates: "true"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    meta.helm.sh/release-name: lscsde-config-flux
+    meta.helm.sh/release-namespace: lscsde-config
   name: jupyterhub

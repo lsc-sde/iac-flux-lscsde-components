@@ -3,6 +3,11 @@ kind: HelmRepository
 metadata:
   name: metrics-server
   namespace: metrics-server
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    meta.helm.sh/release-name: lscsde-config-flux
+    meta.helm.sh/release-namespace: lscsde-config
 spec:
   interval: 5m
   url: https://kubernetes-sigs.github.io/metrics-server/
